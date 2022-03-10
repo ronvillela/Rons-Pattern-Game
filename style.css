@@ -3,7 +3,6 @@ body {
   margin: 2em;
   background-color: slategrey;
   color: white;
-  
 }
 
 h1 {
@@ -52,12 +51,14 @@ button {
 #button4:active, #button4.lit {
   background: yellow;
 }
+
 #button5 {
   background: coral;
 }
 #button5:active, #button5.lit {
   background: tomato;
 }
+
 #button6 {
   background: lightSeaGreen;
 }
