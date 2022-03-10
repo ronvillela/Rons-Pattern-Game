@@ -40,14 +40,7 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 
-https://github.com/ronvillela/Rons-Pattern-Game/blob/dfeffaa27407832937c424616f4df63311dfe212/SITE%20Pre-Work.gif
-
-![](SITE PreWork.gif)
-
-<img src="SITE PreWork.gif" width=250>
-
-
-![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20PreWork.gif)
+![]()
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
@@ -60,19 +53,12 @@ https://stackoverflow.com/search?q=math.random+javascript&s=4b58324a-1571-44df-a
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
-Initially, the game would not play the sequence.  It would only play the single clue.  I realiazed it was a misplaced curly brace.  Once I removed it, it played the sequence.  
-Additioanlly, the randomizer function was not playing a random pattern.  This was due to an incorrect variable in the randomizer algorithm when switching from the current
-element to the random element in the pattern array.  Next, the clueHoldTime variable was not speeding up.  I was not sure where in the playClueSequence function to place the variable.  
-After much trial and error, I placed it before the for loop and it worked.  I also had to subtract the amount I wanted from the initial clueHoldTime value for each loop.  However, I had to adjust
-the number of elements in the pattern array along with increasing the clueHoldTime since the game would hang because the clueHoldTime would reach 0 before the game was over.  The console.log method
-really helped every step of the way.  I was able to confirm whether what I was doing was working or not.  Finally and surpsingly, I was able to figure out the 3 strikes sequence out fairly quickly.
-I realized I needed to add and a condition before calling the loseGame function.  I created three variables, strikes to keep a running count of strikes, totalStrikes which holds the total
-number of strikes allowed, and strikesLeft to hold the difference between totalStrikes minus strikes.  I kept a running count of strikes and added 1 for each incorrect guess.
-If strikes reached 3, I called the loseGame method.  The else allowed for deducting from totalStrikes and would add to progress and call the playClueSequence method until 
-totalStrikes reached 0.
+Initially, the game would not play the sequence.  It would only play the single clue.  I realiazed it was a misplaced curly brace.  Once I removed it, it played correclty.  Additioanlly, the randomizer function I used was not playing a random pattern.  This was due to an incorrect variable in the randomizer algorithm when switching from the current element to the random element in the pattern array within the randomizer function.  Next, the clueHoldTime variable was not speeding up.  I was not sure where in the playClueSequence function to place the clueHoldTime variable.  After much trial and error, I placed it before the for loop and it worked.  I also had to subtract the amount I wanted from the initial clueHoldTime value for each loop.  I also had to adjust the number of elements in the pattern array along with increasing the clueHoldTime since the game would hang because the clueHoldTime would reach 0 before the game was over.  I was able to add buttons and different frequencies for each.  The console.log method really helped every step of the way.  I was able to confirm whether what I was doing was working or not.  Finally and surpsingly, I was able to figure out the 3 strikes sequence function out fairly quickly.  I realized I needed to add a condition before calling the loseGame function.  I created three variables, strikes to keep a running count of strikes, totalStrikes which holds the total number of strikes allowed, and strikesLeft to hold the difference between totalStrikes minus strikes.  I kept a running count of strikes and added 1 for each incorrect guess.  If strikes reached 3, I called the loseGame method.  The if else allowed for deducting from totalStrikes and would add to 1 progress and call the playClueSequence method until totalStrikes reached 0.  At which time you get a toast letting you know the game is over.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+
+I would like to know if you can implement the same features using other languages, like Java.  Does Java also work with HTML/CSS as Javascript.  Is Javascript also an object oriented language.  Additionally, what has to be implemented in order for a program/source code to work the same no matter which device you use (pc, mac, iPad, iPhone, android).
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
