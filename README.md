@@ -40,6 +40,9 @@ The following **additional** features are implemented:
 You Win!<br>
 ![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20You%20Win.gif)
 
+Two Strikes!<br>
+![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%202%20strikes.gif)
+
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
