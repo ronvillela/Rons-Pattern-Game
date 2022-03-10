@@ -1,0 +1,96 @@
+# Pre-work - *Ron's Pattern Game*
+
+**Ron's Pattern Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
+
+Submitted by: **Ron Villela**
+
+Time spent: **7** hours spent in total
+
+Link to project: (https://glitch.com/edit/#!/rons-pattern-game?path=README%3A1%3A0)
+
+## Required Functionality
+
+The following **required** functionality is complete:
+
+* [x] Game interface has a heading (h1 tag), a line of body text (p tag), and four buttons that match the demo app
+* [x] "Start" button toggles between "Start" and "Stop" when clicked. 
+* [x] Game buttons each light up and play a sound when clicked. 
+* [x] Computer plays back sequence of clues including sound and visual cue for each button
+* [x] Play progresses to the next turn (the user gets the next step in the pattern) after a correct guess. 
+* [x] User wins the game after guessing a complete pattern
+* [x] User loses the game after an incorrect guess
+
+The following **optional** features are implemented:
+
+* [ ] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
+* [x] Buttons use a pitch (frequency) other than the ones in the tutorial
+* [x] More than 4 functional game buttons
+* [x] Playback speeds up on each turn
+* [x] Computer picks a different pattern each time the game is played
+* [x] Player only loses after 3 mistakes (instead of on the first mistake)
+* [ ] Game button appearance change goes beyond color (e.g. add an image)
+* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [ ] User has a limited amount of time to enter their guess on each turn
+
+The following **additional** features are implemented:
+
+- [ ] List anything else that you can get done to improve the app!
+
+## Video Walkthrough (GIF)
+
+If you recorded multiple GIFs for all the implemented features, you can add them here:
+![](https://cdn.glitch.global/161ef51d-6a47-4519-a722-23822c4c8435/SITE%20Pre-Work.gif?v=1646881122999)
+![](gif2-link-here)
+![](gif3-link-here)
+![](gif4-link-here)
+
+## Reflection Questions
+1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
+
+For colors:
+https://www.quackit.com/css/css_color_codes.cfm
+
+For randomizer algorithm:
+https://stackoverflow.com/search?q=math.random+javascript&s=4b58324a-1571-44df-ad89-aeafecaddf86
+
+2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
+
+Initially, the game would not play the sequence.  It would only play the single clue.  I realiazed it was a misplaced curly brace.  Once I removed it, it played the sequence.  
+Additioanlly, the randomizer function was not playing a random pattern.  This was due to an incorrect variable in the randomizer algorithm when switching from the current
+element to the random element in the pattern array.  Next, the clueHoldTime variable was not speeding up.  I was not sure where in the playClueSequence function to place the variable.  
+After much trial and error, I placed it before the for loop and it worked.  I also had to subtract the amount I wanted from the initial clueHoldTime value for each loop.  However, I had to adjust
+the number of elements in the pattern array along with increasing the clueHoldTime since the game would hang because the clueHoldTime would reach 0 before the game was over.  The console.log method
+really helped every step of the way.  I was able to confirm whether what I was doing was working or not.  Finally and surpsingly, I was able to figure out the 3 strikes sequence out fairly quickly.
+I realized I needed to add and a condition before calling the loseGame function.  I created three variables, strikes to keep a running count of strikes, totalStrikes which holds the total
+number of strikes allowed, and strikesLeft to hold the difference between totalStrikes minus strikes.  I kept a running count of strikes and added 1 for each incorrect guess.
+If strikes reached 3, I called the loseGame method.  The else allowed for deducting from totalStrikes and would add to progress and call the playClueSequence method until 
+totalStrikes reached 0.
+
+3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
+[YOUR ANSWER HERE]
+
+4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
+[YOUR ANSWER HERE]
+
+
+
+## Interview Recording URL Link
+
+[My 5-minute Interview Recording](your-link-here)
+
+
+## License
+
+    Copyright [Ron Villela]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
