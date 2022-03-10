@@ -37,10 +37,8 @@ The following **additional** features are implemented:
 - [x] Added a pop up message notifying player of number of strikes
 
 ## Video Walkthrough (GIF)
-
-If you recorded multiple GIFs for all the implemented features, you can add them here:
-
-![](SITE You Win.gif)
+You Win!<br>
+![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20You%20Win.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
