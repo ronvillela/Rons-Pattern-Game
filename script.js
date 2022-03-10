@@ -25,8 +25,7 @@ function startGame(){
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");
     randomize(pattern);
-    playClueSequence();
-    
+    playClueSequence(); 
 }   
 
 function randomize(pattern) {
@@ -42,8 +41,6 @@ function randomize(pattern) {
   }
   console.log("random pattern: " + pattern);
   return pattern;
-
-  
 }
 
 function stopGame() {
@@ -55,6 +52,7 @@ function stopGame() {
 function lightButton(btn) {
   document.getElementById("button"+btn).classList.add("lit")
 }
+
 function clearButton(btn) {
   document.getElementById("button"+btn).classList.remove("lit")
 }
@@ -78,9 +76,7 @@ function playClueSequence(){
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
     delay += clueHoldTime;
     delay += cluePauseTime;
-    
-  }
-  
+  } 
 }
 
 function guess(btn){
@@ -118,9 +114,7 @@ function guess(btn){
       progress++;
       playClueSequence();
     }
-    
-  }
-  
+  } 
 }
 
 function loseGame(){
@@ -141,7 +135,6 @@ const freqMap = {
   4: 466.2,
   5: 500,
   6: 542
-  
 }
   
 function playTone(btn,len){ 
@@ -153,6 +146,7 @@ function playTone(btn,len){
     stopTone()
   },len)
 }
+
 function startTone(btn){
   if(!tonePlaying){
     context.resume()
@@ -162,6 +156,7 @@ function startTone(btn){
     tonePlaying = true
   }
 }
+
 function stopTone(){
   g.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
   tonePlaying = false
