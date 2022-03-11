@@ -46,6 +46,9 @@ Two Strikes!<br>
 You Lose!<br>
 ![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20You%20Lose.gif)
 
+Faster!<br>
+![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20faster.gif)
+
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here.
 
