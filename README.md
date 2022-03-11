@@ -37,13 +37,13 @@ The following **additional** features are implemented:
 - [x] Added a pop up message notifying player of number of strikes
 
 ## Video Walkthrough (GIF)
-You Win!<br>
+You Win & More Than 4 Buttons!<br>
 ![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20You%20Win.gif)
 
-Two Strikes!<br>
+Different Pattern Two Strikes!<br>
 ![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%202%20strikes.gif)
 
-You Lose!<br>
+Differnet Pattern You Lose!<br>
 ![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20You%20Lose.gif)
 
 Faster!<br>
