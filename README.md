@@ -71,7 +71,7 @@ https://stackoverflow.com/search?q=math.random+javascript&s=4b58324a-1571-44df-a
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://youtu.be/o1Pr337JG3o)
 
 
 ## License
