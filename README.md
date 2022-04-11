@@ -43,7 +43,7 @@ You Win & More Than 4 Buttons!<br>
 Different Pattern Two Strikes!<br>
 ![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%202%20strikes.gif)
 
-Differnet Pattern You Lose!<br>
+Different Pattern You Lose!<br>
 ![](https://github.com/ronvillela/Rons-Pattern-Game/blob/main/SITE%20You%20Lose.gif)
 
 Faster!<br>
